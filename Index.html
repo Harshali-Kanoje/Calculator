@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator Design</title>
+    <style>
+        .cal-container {
+            width: 260px;
+            background-color: rgba(71, 40, 9, 0.646);
+            margin: auto;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        p {
+            color: white;
+            margin-top: -5px;
+        }
+
+        .cal-input {
+            font-size: 40px;
+            width: 232px;
+            background-color: rgba(211, 224, 190, 0.612);
+            border: 3px solid rgba(71, 40, 9, 0.975);
+        }
+
+        .cal-input-container{
+            padding: 10px;
+            background-color: rgba(110, 87, 87, 0.715);
+            border-radius: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+            background-color: rgba(110, 87, 87, 0.715);
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        .cal-buttons {
+            display: flex;
+
+        }
+
+        .btn {
+            font-size: 32px;
+            height: 60px;
+            width: 60px;
+            margin: 2px;
+            border-radius: 5px;
+            border: 3px solid rgba(86, 61, 61, 0.998);
+            box-shadow: 0 0 1px 2px solid rgba(86, 61, 61, 0.998);
+        }
+
+        .btn-color {
+            background-color: rgba(103, 72, 72, 0.998);
+            color: white;
+        }
+
+        .btn-orange {
+            background-color: rgb(251, 159, 47);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cal-container">
+
+        <p>
+            RTC
+        </p>
+        <div class="cal-input-container">
+            <input type="text" class="cal-input">
+        </div>
+
+        <div class="button-container">
+            <div class="cal-buttons">
+                <button class="btn">%</button>
+                <button class="btn">AC</button>
+                <button class="btn btn-orange ">CE</button>
+                <button class="btn btn-orange ">C</button>
+            </div>
+
+            <div class="cal-buttons">
+                <button class="btn btn-color">7</button>
+                <button class="btn btn-color">8</button>
+                <button class="btn btn-color">9</button>
+                <button class="btn">-</button>
+            </div>
+
+            <div class="cal-buttons">
+                <button class="btn btn-color">4</button>
+                <button class="btn btn-color">5</button>
+                <button class="btn btn-color">6</button>
+                <button class="btn">/</button>
+            </div>
+
+            <div class="cal-buttons">
+                <button class="btn btn-color">1</button>
+                <button class="btn btn-color">2</button>
+                <button class="btn btn-color">3</button>
+                <button class="btn">x</button>
+            </div>
+
+            <div class="cal-buttons">
+                <button class="btn btn-color">0</button>
+                <button class="btn btn-color">.</button>
+                <button class="btn">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
