@@ -1,0 +1,58 @@
+.cal-container {
+    width: 260px;
+    background-color: rgba(71, 40, 9, 0.646);
+    margin: auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+p {
+    color: white;
+    margin-top: -5px;
+}
+
+.cal-input {
+    font-size: 40px;
+    width: 232px;
+    background-color: rgba(211, 224, 190, 0.612);
+    border: 3px solid rgba(71, 40, 9, 0.975);
+}
+
+.cal-input-container {
+    padding: 10px;
+    background-color: rgba(110, 87, 87, 0.715);
+    border-radius: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+    background-color: rgba(110, 87, 87, 0.715);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.cal-buttons {
+    display: flex;
+
+}
+
+.btn {
+    font-size: 32px;
+    height: 60px;
+    width: 60px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 3px solid rgba(86, 61, 61, 0.998);
+    box-shadow: 0 0 1px 2px solid rgba(86, 61, 61, 0.998);
+}
+
+.btn-color {
+    background-color: rgba(103, 72, 72, 0.998);
+    color: white;
+}
+
+.btn-orange {
+    background-color: rgb(251, 159, 47);
+    color: white;
+}

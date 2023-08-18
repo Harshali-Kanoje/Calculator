@@ -3,65 +3,7 @@
 
 <head>
     <title>Calculator Design</title>
-    <style>
-        .cal-container {
-            width: 260px;
-            background-color: rgba(71, 40, 9, 0.646);
-            margin: auto;
-            border-radius: 10px;
-            padding: 15px;
-        }
-
-        p {
-            color: white;
-            margin-top: -5px;
-        }
-
-        .cal-input {
-            font-size: 40px;
-            width: 232px;
-            background-color: rgba(211, 224, 190, 0.612);
-            border: 3px solid rgba(71, 40, 9, 0.975);
-        }
-
-        .cal-input-container{
-            padding: 10px;
-            background-color: rgba(110, 87, 87, 0.715);
-            border-radius: 10px;
-        }
-        .button-container {
-            margin-top: 20px;
-            background-color: rgba(110, 87, 87, 0.715);
-            padding: 10px;
-            border-radius: 10px;
-
-        }
-
-        .cal-buttons {
-            display: flex;
-
-        }
-
-        .btn {
-            font-size: 32px;
-            height: 60px;
-            width: 60px;
-            margin: 2px;
-            border-radius: 5px;
-            border: 3px solid rgba(86, 61, 61, 0.998);
-            box-shadow: 0 0 1px 2px solid rgba(86, 61, 61, 0.998);
-        }
-
-        .btn-color {
-            background-color: rgba(103, 72, 72, 0.998);
-            color: white;
-        }
-
-        .btn-orange {
-            background-color: rgb(251, 159, 47);
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -71,46 +13,48 @@
             RTC
         </p>
         <div class="cal-input-container">
-            <input type="text" class="cal-input">
+            <input type="text" class="cal-input" id="input">
         </div>
 
         <div class="button-container">
             <div class="cal-buttons">
-                <button class="btn">%</button>
-                <button class="btn">AC</button>
-                <button class="btn btn-orange ">CE</button>
-                <button class="btn btn-orange ">C</button>
+                <button class="btn" onclick="keyPress('%')">%</button>
+                <button class="btn" onclick="clear('AC')">AC</button>
+                <button class="btn btn-orange" onclick="keyPress(0)">CE</button>
+                <button class="btn btn-orange " onclick="keyPress(0)">C</button>
             </div>
 
             <div class="cal-buttons">
-                <button class="btn btn-color">7</button>
-                <button class="btn btn-color">8</button>
-                <button class="btn btn-color">9</button>
-                <button class="btn">-</button>
+                <button class="btn btn-color" onclick="keyPress(7)">7</button>
+                <button class="btn btn-color" onclick="keyPress(8)">8</button>
+                <button class="btn btn-color" onclick="keyPress(9)">9</button>
+                <button class="btn" onclick="keyPress('-')">-</button>
             </div>
 
             <div class="cal-buttons">
-                <button class="btn btn-color">4</button>
-                <button class="btn btn-color">5</button>
-                <button class="btn btn-color">6</button>
-                <button class="btn">/</button>
+                <button class="btn btn-color" onclick="keyPress(4)">4</button>
+                <button class="btn btn-color" onclick="keyPress(5)">5</button>
+                <button class="btn btn-color" onclick="keyPress(6)">6</button>
+                <button class="btn" onclick="keyPress('/')">/</button>
             </div>
 
             <div class="cal-buttons">
-                <button class="btn btn-color">1</button>
-                <button class="btn btn-color">2</button>
-                <button class="btn btn-color">3</button>
-                <button class="btn">x</button>
+                <button class="btn btn-color" onclick="keyPress(1)">1</button>
+                <button class="btn btn-color" onclick="keyPress(2)">2</button>
+                <button class="btn btn-color" onclick="keyPress(3)">3</button>
+                <button class="btn" onclick="keyPress('*')">x</button>
             </div>
 
             <div class="cal-buttons">
-                <button class="btn btn-color">0</button>
-                <button class="btn btn-color">.</button>
-                <button class="btn">=</button>
-                <button class="btn">+</button>
+                <button class="btn btn-color" onclick="keyPress(0)">0</button>
+                <button class="btn btn-color" onclick="keyPress('.')">.</button>
+                <button class="btn" onclick="calculate()">=</button>
+                <button class="btn" onclick="keyPress('+')">+</button>
             </div>
         </div>
     </div>
+
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>
